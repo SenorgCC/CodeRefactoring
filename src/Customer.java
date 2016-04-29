@@ -8,6 +8,9 @@ class Customer {
     public Customer (String newname){
         name = newname;
     };
+    private double amountFor(Rental aRental){
+        return aRental.getCharge();
+    };
     public void addRental(Rental arg) {
         rentals.addElement(arg);
     };
